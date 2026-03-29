@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ['Inicio', 'Características', 'Tienda', 'Contacto'];
+  const menuItems = ['Inicio', 'Características', 'Tienda', 'Contacto', 'Blog'];
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white z-50 border-b border-zinc-200">
