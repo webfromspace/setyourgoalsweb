@@ -1,23 +1,17 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import Products from './components/Products';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Blog from './pages/Blog';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Blog from "./pages/Blog";
+import Producto from "./pages/Producto";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <Hero />
-      <Features />
-      <Products />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/producto/" element={<Producto />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
